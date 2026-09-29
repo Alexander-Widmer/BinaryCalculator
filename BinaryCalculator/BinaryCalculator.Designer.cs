@@ -101,7 +101,7 @@ namespace MB01.A1_2_5
             LblCidr =
                 new Label();
 
-            NudCidr =
+            NumCidr =
                 new NumericUpDown();
 
             LblSubnetMask =
@@ -238,7 +238,7 @@ namespace MB01.A1_2_5
 
 
             ((System.ComponentModel.ISupportInitialize)
-                NudCidr).BeginInit();
+                NumCidr).BeginInit();
 
 
             ((System.ComponentModel.ISupportInitialize)
@@ -715,32 +715,32 @@ namespace MB01.A1_2_5
                 "CIDR";
 
 
-            NudCidr.Location =
+            NumCidr.Location =
                 new Point(70, 31);
 
-            NudCidr.Maximum =
+            NumCidr.Maximum =
                 32;
 
-            NudCidr.Minimum =
+            NumCidr.Minimum =
                 0;
 
-            NudCidr.Name =
-                "NudCidr";
+            NumCidr.Name =
+                "NumCidr";
 
-            NudCidr.Size =
+            NumCidr.Size =
                 new Size(65, 23);
 
-            NudCidr.TabIndex =
+            NumCidr.TabIndex =
                 8;
 
-            NudCidr.TextAlign =
+            NumCidr.TextAlign =
                 HorizontalAlignment.Center;
 
-            NudCidr.Value =
+            NumCidr.Value =
                 24;
 
-            NudCidr.ValueChanged +=
-                NudCidr_ValueChanged;
+            NumCidr.ValueChanged +=
+                NumCidr_ValueChanged;
 
 
             LblSubnetMask.AutoSize =
@@ -921,7 +921,7 @@ namespace MB01.A1_2_5
 
 
             TipHelp.SetToolTip(
-                NudCidr,
+                NumCidr,
                 "CIDR-Präfix: Anzahl der Network Bits von 0 bis 32."
             );
 
@@ -937,7 +937,7 @@ namespace MB01.A1_2_5
             );
 
             GrpSubnet.Controls.Add(
-                NudCidr
+                NumCidr
             );
 
             GrpSubnet.Controls.Add(
@@ -1755,7 +1755,7 @@ namespace MB01.A1_2_5
 
 
             ((System.ComponentModel.ISupportInitialize)
-                NudCidr).EndInit();
+                NumCidr).EndInit();
 
 
             ((System.ComponentModel.ISupportInitialize)
@@ -1830,7 +1830,7 @@ namespace MB01.A1_2_5
 
         private Label LblCidr;
 
-        private NumericUpDown NudCidr;
+        private NumericUpDown NumCidr;
 
 
         private Label LblSubnetMask;

@@ -432,7 +432,7 @@ namespace MB01.A1_2_5
         // CIDR -> SUBNET MASK
         // =========================================================
 
-        private void NudCidr_ValueChanged(
+        private void NumCidr_ValueChanged(
             object sender,
             EventArgs e)
         {
@@ -443,7 +443,7 @@ namespace MB01.A1_2_5
 
 
             int prefix =
-                (int)NudCidr.Value;
+                (int)NumCidr.Value;
 
 
             ApplyPrefixToMask(prefix);
@@ -565,7 +565,7 @@ namespace MB01.A1_2_5
 
             try
             {
-                NudCidr.Value = prefix;
+                NumCidr.Value = prefix;
             }
             finally
             {
@@ -1635,7 +1635,7 @@ namespace MB01.A1_2_5
                 }
 
 
-                NudCidr.Value =
+                NumCidr.Value =
                     prefix;
 
 
